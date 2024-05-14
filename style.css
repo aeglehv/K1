@@ -1,0 +1,100 @@
+
+
+/*Universal Selector*/
+* {
+    color:#1f1f1f;
+    font-size: 20px;
+    text-decoration: none;
+} 
+
+/* ID 1*/
+#nav{ 
+    border-bottom-left-radius: 35px;
+    overflow: hidden;
+}
+
+/* ID 2*/
+#space{
+    margin-left: 60px;
+}
+
+/* element selector 1*/
+h1{
+    font-size: 30px;
+}
+
+/*keyframe untuk animasi text*/
+@keyframes anim{
+    0% {color: white;}
+    50% {color: cyan;}
+    100% {color: white;}
+}
+
+@keyframes anim1{
+    0% {color: aliceblue;}
+    50% {color: aqua;}
+    100% {color: #8100cc;}
+}
+
+
+/*ID Selector 1*/
+/*pseudo class, digunakan untuk mentarget keadaan khusus atribut*/
+#eff:hover{
+    animation: anim 6s infinite;
+}
+
+
+/*Class selector 1*/
+.content {
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+/* Attribute Selector 1 */
+.content h1,h2,h3,h4,h5,h6{
+    font-family: Arial;
+    color: #0f0f0f;
+}
+
+/* Attribute selector 2*/
+.content h2{
+    font-size: 40px;
+}
+
+/*Class + ID Selector 3*/
+.content #hvr:hover{
+    transition: all ease-in-out 0.3s; 
+    color: azure;
+    font-size: 45px;
+    animation: anim1 3s forwards;
+}
+
+/*class + ID Selector 3*/
+.content #hvr{
+    transition: all ease-in-out 0.3s;
+    font-size: 40px;
+}
+
+
+/*Class Selector 2*/
+/*attribute selector 3*/
+.sidebar h2{
+    color: lightgray;
+    font-size: 35px;
+}
+
+/*Attrbute + pseudo*/
+.sidebar h2:hover{
+    transition: all ease-in-out 0.3s;
+    color: black;
+    font-size: 40px;
+}
+
+/*Attrivute selector 3-2*/
+.sidebar h2{
+    color: lightgray;
+    font-size: 35px;
+    transition: all ease-in-out 0.3s;
+}
+
+
